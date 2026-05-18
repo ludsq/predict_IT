@@ -30,6 +30,30 @@ Os gráficos e tabelas do notebook apontam três sinais principais:
 
 Em termos executivos, isso indica que existe sinal operacional suficiente para classificar risco de forma antecipada e apoiar a priorização.
 
+### Distribuição das Métricas Operacionais
+
+![Distribuição das métricas](report_images/eda_distribuicoes.png)
+
+As distribuições mostram comportamento consistente das variáveis simuladas, com dispersão suficiente para distinguir cenários normais e cenários mais próximos de falha.
+
+### Variáveis Mais Associadas à Falha
+
+![Boxplots de latência e erro por falha](report_images/eda_boxplots_falha.png)
+
+Os boxplots reforçam que latência de rede e taxa de erro se elevam nos registros associados à falha na próxima hora, tornando-se variáveis operacionais particularmente relevantes para monitoramento preventivo.
+
+### Correlação Entre Métricas e Variáveis-Alvo
+
+![Heatmap de correlação](report_images/eda_heatmap_correlacao.png)
+
+O heatmap mostra que as variáveis operacionais apresentam associação útil com os alvos de falha, sustentando a aplicação de modelos supervisionados para previsão de curto prazo.
+
+### Evolução Temporal da Taxa de Falha
+
+![Tendência temporal da taxa de falha](report_images/eda_tendencia_falha.png)
+
+A série temporal reforça a importância de acompanhamento contínuo, já que a taxa média de falha varia ao longo do tempo e pode servir como insumo para priorização operacional.
+
 ## Resultados de Modelagem
 
 O notebook compara diferentes abordagens:
@@ -40,9 +64,15 @@ O notebook compara diferentes abordagens:
 
 De acordo com a conclusão do próprio notebook, os resultados apresentaram desempenho consistente, com destaque para modelos como Regressão Logística, MLP e Deep Learning na tarefa de previsão de falhas de curto prazo.
 
+Em termos executivos, isso sugere que o problema possui sinal suficiente para suportar um pipeline preditivo aplicável em contexto real de observabilidade.
+
 ## Análise de Rede e Criticidade
 
 O projeto modela dependências entre servidores por meio de um grafo e aplica PageRank para identificar elementos mais centrais da infraestrutura.
+
+### Grafo de Dependência e Criticidade
+
+![Grafo de dependência com PageRank](report_images/network_pagerank.png)
 
 O ganho gerencial dessa etapa é direto:
 
