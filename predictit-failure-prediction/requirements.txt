@@ -1,0 +1,9 @@
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.9
+seaborn>=0.13
+scikit-learn>=1.5
+tensorflow>=2.16
+networkx>=3.3
+jupyter>=1.0
+streamlit>=1.37
