@@ -1,32 +1,32 @@
-# PredictIT - Sistema Inteligente de Predicao de Falhas em Infraestrutura de TI
+# PredictIT - Sistema Inteligente de Predição de Falhas em Infraestrutura de TI
 
-Projeto de portfolio em Data Science para prever falhas de servidores nas proximas 1 a 3 horas com base em metricas operacionais.
+Projeto de portfólio em Data Science para prever falhas de servidores nas próximas 1 a 3 horas com base em métricas operacionais.
 
-## Visao Geral
+## Visão Geral
 
-O projeto foi consolidado em um unico notebook principal:
+O projeto foi consolidado em um único notebook principal:
 
-- [predict_IT.ipynb](/c:/Users/ludmi/dev-projects/predict_it/predict_IT/predictit-failure-prediction/predict_IT.ipynb)
+- [predict_IT.ipynb](predict_IT.ipynb)
 
-Esse notebook reune todo o fluxo analitico:
+Esse notebook reúne todo o fluxo analítico:
 
-- contexto e problema de negocio;
-- geracao de dados simulados;
-- limpeza e preparacao;
-- analise exploratoria com graficos;
-- modelagem preditiva;
-- network analysis com PageRank;
-- conclusoes e proximos passos.
+- Contexto e problema de negócio;
+- Geração de dados simulados;
+- Limpeza e preparação;
+- Análise exploratória com gráficos;
+- Modelagem preditiva;
+- Análise de rede com PageRank;
+- Conclusões e próximos passos.
 
-## Tecnicas Utilizadas
+## Técnicas Utilizadas
 
-- Regressao Linear
-- Regressao Logistica
+- Regressão Linear
+- Regressão Logística
 - Perceptron / MLP
 - Deep Learning com TensorFlow / Keras
 - Network Science com NetworkX
 
-## Variaveis do Dataset
+## Variáveis do Dataset
 
 - `timestamp`
 - `server_id`
@@ -40,17 +40,17 @@ Esse notebook reune todo o fluxo analitico:
 - `failure_next_hour`
 - `failure_next_3h`
 
-## Execucao
+## Execução
 
-O notebook foi preparado para execucao simples no Google Colab.
+O notebook foi preparado para execução simples no Google Colab.
 
-Dependencias usadas:
+Dependências usadas:
 
 ```python
 !pip -q install numpy pandas matplotlib seaborn scikit-learn networkx tensorflow
 ```
 
-Depois, basta executar o notebook `predict_IT.ipynb` em sequencia.
+Depois, basta executar o notebook `predict_IT.ipynb` em sequência.
 
 ## Estrutura Final Para Git
 
@@ -66,6 +66,6 @@ predictit-failure-prediction/
 
 Antecipar falhas operacionais de curto prazo para apoiar:
 
-- reducao de downtime;
-- priorizacao preventiva de incidentes;
-- melhor uso de monitoramento e resposta em infraestrutura de TI.
+- Redução de downtime;
+- Priorização preventiva de incidentes;
+- Melhor uso de monitoramento e resposta em infraestrutura de TI.
